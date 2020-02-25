@@ -1,0 +1,28 @@
+<h1>Wyślij RSS</h1>
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+  <div class="form-group row">
+    <input 
+      class="form-control" 
+      placeholder="Username" 
+      type="text" 
+      formControlName="username"
+      (input)="onInput()"/>
+  </div>
+  <div class="form-group row">
+    <input 
+      class="form-control" 
+      placeholder="Nazwa RSS" 
+      type="text" 
+      formControlName="name"
+      (input)="onInput()"/>
+  </div>
+  <div class="form-group row">
+    <input 
+      class="form-control" 
+      placeholder="URL" 
+      type="url" 
+      formControlName="url"
+      (input)="onInput()"/>
+  </div>
+  <button class="btn btn-info" type="submit" [disabled]="!formGroup.valid">Wyślij</button>
+</form>
