@@ -29,6 +29,7 @@ namespace RSSSender
             });
 
             services.AddTransient<IRssStoreService, RssStoreService>();
+            services.AddTransient<ILoggerService, FileLoggerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

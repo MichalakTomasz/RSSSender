@@ -1,11 +1,12 @@
 ﻿using RSSSender.Models;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace RSSSender.Services
 {
     public interface IRssStoreService
     {
-        Task<RssData> GetRssDataAsync();
-        Task SetRssDataAsync(RssData rssData);
+        Task<IEnumerable<RssData>> LoadRssDataAsync();
+        Task SaveRssDataAsync(RssData rssData);
     }
 }

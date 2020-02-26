@@ -21,7 +21,7 @@ namespace RSSSender.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            await rssStoreService.SetRssDataAsync(rssData);
+            await rssStoreService.SaveRssDataAsync(rssData);
 
             return Ok(true);
         }
