@@ -26,3 +26,4 @@
   </div>
   <button class="btn btn-info" type="submit" [disabled]="!formGroup.valid">Wyślij</button>
 </form>
+<div *ngIf="sent" class="alert alert-success text-center">Rss wysłany prawidłowo</div>

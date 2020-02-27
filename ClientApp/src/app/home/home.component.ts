@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
       name: this.formGroup.value.name,
       url: this.formGroup.value.url
     }
-    this.http.post(url, rssData).subscribe(result => this.sent)
+    this.http.post<boolean>(url, rssData).subscribe(result => this.sent = result)
   }
 
   onInput(){
