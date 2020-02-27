@@ -1,5 +1,5 @@
-.ng-invalid {
-    border-left: 5px, solid, red;
+.form-control.ng-invalid.ng-touched {
+    border-left: 5px solid red;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
