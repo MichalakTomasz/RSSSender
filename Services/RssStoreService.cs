@@ -35,6 +35,7 @@ namespace RSSSender.Services
                         row["Name"] = rssData.Name;
                         row["Username"] = rssData.Username;
                         row["Url"] = rssData.Url;
+                        row["Email"] = rssData.Email;
                         dataTable.Rows.Add(row);
                         dAdaprer.Update(dataTable);
                     }
@@ -68,6 +69,7 @@ namespace RSSSender.Services
                                 Name = ((DataRow)row)["Name"].ToString(),
                                 Username = ((DataRow)row)["Username"].ToString(),
                                 Url = ((DataRow)row)["Url"].ToString(),
+                                Email = ((DataRow)row)["Email"].ToString()
                             };
                             result.Add(rssData);
                         }

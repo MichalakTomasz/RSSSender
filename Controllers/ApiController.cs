@@ -46,8 +46,8 @@ namespace RSSSender.Controllers
             var subject = "Hello world email from Sendgrid ";
             var htmlContent = "<strong>Hello world with HTML content</strong>"; 
             var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, tos, subject, "", htmlContent, false);
-            var response = await client.SendEmailAsync(msg);
-
+            await client.SendEmailAsync(msg);
+            
             return Ok(true);
         }
     }

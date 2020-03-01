@@ -19,7 +19,10 @@ export class HomeComponent implements OnInit {
     this.formGroup = new FormGroup({
       username: new FormControl('', Validators.required),
       name: new FormControl('', Validators.required),
-      url: new FormControl('', Validators.required)
+      url: new FormControl('', Validators.required),
+      email: new FormControl('', { 
+        validators: [Validators.email, Validators.required],
+        updateOn: 'blur'})
     });
   }
 
@@ -28,7 +31,8 @@ export class HomeComponent implements OnInit {
     let rssData = <IRssData> {
       username: this.formGroup.value.username,
       name: this.formGroup.value.name,
-      url: this.formGroup.value.url
+      url: this.formGroup.value.url,
+      email: this.formGroup.value.email
     }
     this.http.post<boolean>(url, rssData).subscribe(result => this.sent = result)
   }

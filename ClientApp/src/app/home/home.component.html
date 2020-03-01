@@ -24,6 +24,14 @@
       formControlName="url"
       (input)="onInput()"/>
   </div>
+  <div class="form-group row">
+    <input 
+      class="form-control" 
+      placeholder="Email address" 
+      type="email" 
+      formControlName="email"
+      (input)="onInput()"/>
+  </div>
   <button class="btn btn-info" type="submit" [disabled]="!formGroup.valid">Wyślij</button>
 </form>
 <div *ngIf="sent" class="alert alert-success text-center">Rss wysłany prawidłowo</div>
