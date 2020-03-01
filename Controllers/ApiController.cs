@@ -39,13 +39,12 @@ namespace RSSSender.Controllers
             var client = new SendGridClient(apiKey);
             var from = new EmailAddress("vlad3dracula@gmail.com", "Example User 1");
             var tos = new List<EmailAddress>
-          {
+            {
               new EmailAddress("protheus@o2.com", "protheus")
-          };
+            };
 
             var subject = "Hello world email from Sendgrid ";
-            var htmlContent = "<strong>Hello world with HTML content</strong>";
-            var displayRecipients = false; // set this to true if you want recipients to see each others mail id 
+            var htmlContent = "<strong>Hello world with HTML content</strong>"; 
             var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, tos, subject, "", htmlContent, false);
             var response = await client.SendEmailAsync(msg);
 
