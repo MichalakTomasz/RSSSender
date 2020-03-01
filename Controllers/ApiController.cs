@@ -1,7 +1,11 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using RSSSender.Models;
 using RSSSender.Services;
+using SendGrid;
+using SendGrid.Helpers.Mail;
 
 namespace RSSSender.Controllers
 {
@@ -9,10 +13,12 @@ namespace RSSSender.Controllers
     public class ApiController : ControllerBase
     {
         private readonly IRssStoreService rssStoreService;
+        private readonly IConfiguration configuration;
 
-        public ApiController(IRssStoreService rssStoreService)
+        public ApiController(IRssStoreService rssStoreService, IConfiguration configuration)
         {
             this.rssStoreService = rssStoreService;
+            this.configuration = configuration;
         }
 
         [HttpPost("sendrssdata")]
@@ -21,7 +27,27 @@ namespace RSSSender.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            await rssStoreService.SaveRssDataAsync(rssData);
+            var result = await rssStoreService.SaveRssDataAsync(rssData);
+
+            return Ok(result);
+        }
+
+        [HttpGet("sendnotification")]
+        public async Task<IActionResult> PostMessage()
+        {
+            var apiKey = configuration.GetSection("SENDGRID_API_KEY").Value;
+            var client = new SendGridClient(apiKey);
+            var from = new EmailAddress("vlad3dracula@gmail.com", "Example User 1");
+            var tos = new List<EmailAddress>
+          {
+              new EmailAddress("protheus@o2.com", "protheus")
+          };
+
+            var subject = "Hello world email from Sendgrid ";
+            var htmlContent = "<strong>Hello world with HTML content</strong>";
+            var displayRecipients = false; // set this to true if you want recipients to see each others mail id 
+            var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, tos, subject, "", htmlContent, false);
+            var response = await client.SendEmailAsync(msg);
 
             return Ok(true);
         }

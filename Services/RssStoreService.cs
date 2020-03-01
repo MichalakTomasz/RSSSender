@@ -19,7 +19,7 @@ namespace RSSSender.Services
             this.loggerService = loggerService;
         }
 
-        public async Task SaveRssDataAsync(RssData rssData)
+        public async Task<bool> SaveRssDataAsync(RssData rssData)
         {
             try
             {
@@ -39,10 +39,13 @@ namespace RSSSender.Services
                         dAdaprer.Update(dataTable);
                     }
                 });
+                return true;
             }
             catch (Exception e)
             {
                 loggerService.Log($"SaveRssDataAsyncException message: {e.Message}");
+
+                return false;
             }    
         }
 
