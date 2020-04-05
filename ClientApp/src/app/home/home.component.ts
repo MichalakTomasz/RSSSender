@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
 
   formGroup: FormGroup
   sent = false
+  rss: String
 
   ngOnInit(): void {
     this.formGroup = new FormGroup({
@@ -24,6 +25,11 @@ export class HomeComponent implements OnInit {
         validators: [Validators.email, Validators.required],
         updateOn: 'blur'})
     });
+
+    let url = document.location.origin + '/api/getrss'
+    this.http.get<String>(url).subscribe(result => {
+      this.rss = result
+    })
   }
 
   onSubmit(){

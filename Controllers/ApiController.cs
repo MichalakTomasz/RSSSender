@@ -14,11 +14,16 @@ namespace RSSSender.Controllers
     {
         private readonly IRssStoreService rssStoreService;
         private readonly IConfiguration configuration;
+        private readonly IRssReaderService rssReaderService;
 
-        public ApiController(IRssStoreService rssStoreService, IConfiguration configuration)
+        public ApiController(
+            IRssStoreService rssStoreService, 
+            IConfiguration configuration,
+            IRssReaderService rssReaderService)
         {
             this.rssStoreService = rssStoreService;
             this.configuration = configuration;
+            this.rssReaderService = rssReaderService;
         }
 
         [HttpPost("sendrssdata")]
@@ -49,6 +54,13 @@ namespace RSSSender.Controllers
             await client.SendEmailAsync(msg);
             
             return Ok(true);
+        }
+
+        [HttpGet("getrss")]
+        public IActionResult GetRss()
+        {
+            var rss = rssReaderService.GetRss();
+            return Ok(rss);
         }
     }
 }

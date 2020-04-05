@@ -1,0 +1,242 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>
+<![CDATA[ Najnowsze wiadomości - TVN24 ]]>
+</title>
+<description>
+<![CDATA[
+Czytaj najnowsze wiadomości z kraju i ze świata oraz oglądaj wideo w portalu TVN24! U nas zawsze najświeższe informacje, unikalne wideo, relacje na żywo.
+]]>
+</description>
+<link>https://tvn24.pl/najnowsze/</link>
+<language>pl</language>
+<copyright>TVN</copyright>
+<lastBuildDate>2020-04-05T07:55:40.000Z</lastBuildDate>
+<item>
+<title>
+<![CDATA[
+Warszawa spowita smogiem. Jakość powietrza jest fatalna
+]]>
+</title>
+<link>
+https://tvn24.pl/tvnwarszawa/najnowsze/warszawa-stolica-spowita-smogiem-jakosc-powietrza-jest-fatalna-4543150?source=rss
+</link>
+<description>
+<![CDATA[
+<img src="https://tvn24.pl/tvnwarszawa/oczekujace/cdn-zdjecie-acmkut-smog-nad-warszawa-1392385/alternates/LANDSCAPE_1280" alt="Warszawa spowita smogiem. Jakość powietrza jest fatalna" /> W niedzielę bardzo wysokie stężenie pyłów zawieszonych tworzących smog odnotowano niemal we wszystkich punktach pomiarowych na terenie Warszawy.
+]]>
+</description>
+<pubDate>2020-04-05T07:55:40.000Z</pubDate>
+<guid>
+https://tvn24.pl/tvnwarszawa/najnowsze/warszawa-stolica-spowita-smogiem-jakosc-powietrza-jest-fatalna-4543150
+</guid>
+</item>
+<item>
+<title>
+<![CDATA[
+Wzruszające sceny przed nowojorskimi szpitalami.  "Niesamowity moment w czasach chaosu"
+]]>
+</title>
+<link>
+https://tvn24.pl/swiat/koronawirus-w-usa-nowojorscy-strazacy-dziekuja-lekarzom-4543095?source=rss
+</link>
+<description>
+<![CDATA[
+<img src="https://tvn24.pl/najnowsze/cdn-zdjecie-k2tvdi-nowojorscy-strazacy-podziekowali-pracownikom-szpitali-4543028/alternates/LANDSCAPE_1280" alt="Wzruszające sceny przed nowojorskimi szpitalami.  "Niesamowity moment w czasach chaosu"" /> W nowojorskich szpitalach brakuje sprzętu i łóżek. Nie brakuje za to poświęcenia i woli niesienia pomocy. Lekarze, pielęgniarki, ratownicy niestrudzenie walczą ze śmiertelnym wirusem na pierwszej linii frontu. W ramach podziękowania za swoją pracę otrzymali gromkie brawa od strażaków.
+]]>
+</description>
+<pubDate>2020-04-05T07:52:01.000Z</pubDate>
+<guid>
+https://tvn24.pl/swiat/koronawirus-w-usa-nowojorscy-strazacy-dziekuja-lekarzom-4543095
+</guid>
+</item>
+<item>
+<title>
+<![CDATA[ Wprowadzili internetowe rezerwacje na mszę świętą ]]>
+</title>
+<link>
+https://tvn24.pl/pomorze/koronawirus-w-polsce-rezerwacje-miejsc-na-niedziele-palmowa-w-kosciele-w-mierzynie-4543057?source=rss
+</link>
+<description>
+<![CDATA[
+<img src="https://tvn24.pl/pomorze/cdn-zdjecie-d8uzj9-kosciol-pw-matki-boskiej-bolesnej-w-mierzynie-4543058/alternates/LANDSCAPE_1280" alt="Wprowadzili internetowe rezerwacje na mszę świętą" /> Trzeba było "kliknąć wybraną mszę" i zielony przycisk "zarezerwuj". Później podać adres e-mail i nazwisko. Po rejestracji na podany adres przyszło potwierdzenie rezerwacji. Tak kościół w Mierzynie (Zachodniopomorskie) wybrał wśród wiernych tych, którzy mogą przyjść na Niedzielę Palmową. Miejsc było mało, wierni zarezerwowali wszystkie.
+]]>
+</description>
+<pubDate>2020-04-05T07:49:48.000Z</pubDate>
+<guid>
+https://tvn24.pl/pomorze/koronawirus-w-polsce-rezerwacje-miejsc-na-niedziele-palmowa-w-kosciele-w-mierzynie-4543057
+</guid>
+</item>
+<item>
+<title>
+<![CDATA[
+Wokół elektrowni w Czarnobylu płonął las. "Poziom promieniowania jest w normie"
+]]>
+</title>
+<link>
+https://tvn24.pl/swiat/ukraina-wokol-elektrowni-w-czarnobylu-plonelo-20-hektarow-lasu-4543019?source=rss
+</link>
+<description>
+<![CDATA[
+<img src="https://tvn24.pl/najnowsze/cdn-zdjecie-z1mj9b-dym-nad-zamknieta-strefa-wokol-czarnobyla-4542989/alternates/LANDSCAPE_1280" alt="Wokół elektrowni w Czarnobylu płonął las. "Poziom promieniowania jest w normie" " /> Ukraińskie służby informują, że pożar w zamkniętej strefie wokół nieczynnej elektrowni w Czarnobylu został ugaszony. Ogień pojawił się w sobotnie popołudnie. Służby zapewniały, że nie ma zagrożenia dla mieszkańców.
+]]>
+</description>
+<pubDate>2020-04-05T07:27:39.000Z</pubDate>
+<guid>
+https://tvn24.pl/swiat/ukraina-wokol-elektrowni-w-czarnobylu-plonelo-20-hektarow-lasu-4543019
+</guid>
+</item>
+<item>
+<title>
+<![CDATA[
+Bohaterowie "drugiego planu" o życiu w "trybie awaryjnym"
+]]>
+</title>
+<link>
+https://tvn24.pl/poznan/koronawirus-w-polsce-bohaterowie-drugiego-planu-w-walce-z-koronawirusem-4541958?source=rss
+</link>
+<description>
+<![CDATA[
+<img src="https://tvn24.pl/poznan/cdn-zdjecie-7kjxbg-niech-moc-bedzie-z-wami-4541962/alternates/LANDSCAPE_1280" alt="Bohaterowie "drugiego planu" o życiu w "trybie awaryjnym" " /> Gdy za Anną zamykają się drzwi, Marcin czuje się jakby jego żona szła na wojnę. Ubrana od stóp do głów, pracuje w laboratorium, w którym badane są próbki chorych na Covid-19. Takich jak ona osób, które codziennie się narażają jest więcej. Wszyscy oni mogą liczyć na bohaterów "drugiego planu".
+]]>
+</description>
+<pubDate>2020-04-05T07:17:49.000Z</pubDate>
+<guid>
+https://tvn24.pl/poznan/koronawirus-w-polsce-bohaterowie-drugiego-planu-w-walce-z-koronawirusem-4541958
+</guid>
+</item>
+<item>
+<title>
+<![CDATA[
+Co roku rozdawali na ulicach żonkile, teraz akcja przenosi się do internetu
+]]>
+</title>
+<link>
+https://tvn24.pl/tvnwarszawa/srodmiescie/koronawirus-w-polsce-akcja-zonkile-w-rocznice-powstania-w-getcie-warszawskim-przenosi-sie-do-internetu-4542759?source=rss
+</link>
+<description>
+<![CDATA[
+<img src="https://tvn24.pl/tvnwarszawa/najnowsze/cdn-zdjecie-e0nag9-wolontariusze-akcji-zonkile-4542791/alternates/LANDSCAPE_1280" alt="Co roku rozdawali na ulicach żonkile, teraz akcja przenosi się do internetu" /> - Sytuacja jest specyficzna, ale zrobimy co w naszej mocy, by upamiętnić bohaterów - mówi Andrzej Tkacz jeden z wolontariuszy akcji Żonkile. W tym roku nie będzie rozdawania papierowych kwiatów na ulicach stolicy. Ale nie oznacza to, że Muzeum Historii Żydów Polskich rezygnuje z obchodów 77. rocznicy powstania w getcie warszawskim. Każdy z nas może przyłączyć się do nich wirtualnie.
+]]>
+</description>
+<pubDate>2020-04-05T07:11:33.000Z</pubDate>
+<guid>
+https://tvn24.pl/tvnwarszawa/srodmiescie/koronawirus-w-polsce-akcja-zonkile-w-rocznice-powstania-w-getcie-warszawskim-przenosi-sie-do-internetu-4542759
+</guid>
+</item>
+<item>
+<title>
+<![CDATA[
+30 nowych przypadków koronawirusa w Chinach. 25 dotyczy osób z zagranicy
+]]>
+</title>
+<link>
+https://tvn24.pl/swiat/koronawirus-w-polsce-europie-i-na-swiecie-relacja-na-zywo-z-5-kwietnia-2020-4542987?source=rss
+</link>
+<description>
+<![CDATA[
+<img src="https://tvn24.pl/najnowsze/cdn-zdjecie-ldtb2s-w-chinach-potwierdzono-30-nowych-przypadkow-zakazenia-koronawirusem-4543061/alternates/LANDSCAPE_1280" alt="30 nowych przypadków koronawirusa w Chinach. 25 dotyczy osób z zagranicy" /> Chińska państwowa komisja zdrowia poinformowała o 30 nowych przypadkach zakażenia koronawirusem w ciągu ostatniej doby. 25 z nich dotyczy osób, które przyjechały z zagranicy. Na całym świecie odnotowano już ponad 1,2 miliona przypadków zakażenia, a ponad 64 tysiące osób zmarło. Jak Polska, Europa i świat walczą z pandemią?
+]]>
+</description>
+<pubDate>2020-04-05T06:32:12.000Z</pubDate>
+<guid>
+https://tvn24.pl/swiat/koronawirus-w-polsce-europie-i-na-swiecie-relacja-na-zywo-z-5-kwietnia-2020-4542987
+</guid>
+</item>
+<item>
+<title>
+<![CDATA[
+Oklejone okna siłowni, niepokój sąsiadów i interwencja policji
+]]>
+</title>
+<link>
+https://tvn24.pl/poznan/koronawirus-w-polsce-wagrowiec-oklejone-okna-silowni-niepokoj-sasiadow-i-interwencja-policji-4542840?source=rss
+</link>
+<description>
+<![CDATA[
+<img src="https://tvn24.pl/pomorze/cdn-zdjecie-ddnu5s-przestrzegania-nowych-przepisow-pilnuja-policjanci-4542838/alternates/LANDSCAPE_1280" alt="Oklejone okna siłowni, niepokój sąsiadów i interwencja policji" /> Właściciel jednej z siłowni w Wągrowcu (Wielkopolska) okleił szyby lokalu. Mieszkańcy sąsiednich budynków zauważyli, że wchodzą tam osoby postronne, i zawiadomili policjantów, a ci sprawdzili lokal.
+]]>
+</description>
+<pubDate>2020-04-05T06:13:36.000Z</pubDate>
+<guid>
+https://tvn24.pl/poznan/koronawirus-w-polsce-wagrowiec-oklejone-okna-silowni-niepokoj-sasiadow-i-interwencja-policji-4542840
+</guid>
+</item>
+<item>
+<title>
+<![CDATA[
+Imprezowali w altance, bo są młodzi i koronawirusa się nie boją
+]]>
+</title>
+<link>
+https://tvn24.pl/pomorze/koronawirus-w-polsce-gdansk-imprezowali-w-altance-bo-sa-mlodzi-i-koronawirusa-sie-nie-boja-4542856?source=rss
+</link>
+<description>
+<![CDATA[
+<img src="https://tvn24.pl/pomorze/cdn-zdjecie-dirqyx-policjanci-za-lamanie-przepisow-karza-mandatami-i-kieruja-wnioski-do-sadu-4542853/alternates/LANDSCAPE_1280" alt="Imprezowali w altance, bo są młodzi i koronawirusa się nie boją" /> Grupa młodych ludzi, pomimo obowiązujących ograniczeń, zorganizowała imprezę w altance działkowej. Tłumaczyli, że nie czują się zagrożeni epidemią, bo są młodzi. Policjanci skierują wnioski o ich ukaranie do sądu oraz poinformują o zdarzeniu służby sanitarne. A to oznacza spore kłopoty.
+]]>
+</description>
+<pubDate>2020-04-05T05:53:57.000Z</pubDate>
+<guid>
+https://tvn24.pl/pomorze/koronawirus-w-polsce-gdansk-imprezowali-w-altance-bo-sa-mlodzi-i-koronawirusa-sie-nie-boja-4542856
+</guid>
+</item>
+<item>
+<title>
+<![CDATA[
+Godzina policyjna już od 15. W Algierii zaostrzają restrykcje
+]]>
+</title>
+<link>
+https://tvn24.pl/swiat/godzina-policyjna-juz-od-15-w-algierii-zaostrzaja-restrykcje-4542951?source=rss
+</link>
+<description>
+<![CDATA[
+<img src="https://tvn24.pl/najnowsze/cdn-zdjecie-57vc05-afryka-rowniez-zmaga-sie-z-pandemia-4542948/alternates/LANDSCAPE_1280" alt="Godzina policyjna już od 15. W Algierii zaostrzają restrykcje" /> Władze Algierii wydłużyły w sobotę obowiązywanie godziny policyjnej w większości kraju. Od niedzieli nakaz pozostania w domach będzie obowiązywał już od godziny 15 do 7 rano - ogłosił premier kraju Abdelaziz Dżerad.
+]]>
+</description>
+<pubDate>2020-04-05T05:46:49.000Z</pubDate>
+<guid>
+https://tvn24.pl/swiat/godzina-policyjna-juz-od-15-w-algierii-zaostrzaja-restrykcje-4542951
+</guid>
+</item>
+<item>
+<title>
+<![CDATA[
+Murem za zwolnionym kapitanem lotniskowca. Ponad 120 tysięcy podpisów pod petycją o jego przywrócenie
+]]>
+</title>
+<link>
+https://tvn24.pl/swiat/murem-za-zwolnionym-kapitanem-lotniskowca-ponad-120-tysiecy-podpisow-pod-petycja-o-jego-przywrocenie-4542940?source=rss
+</link>
+<description>
+<![CDATA[
+<img src="https://tvn24.pl/najnowsze/cdn-zdjecie-8bswmc-brett-crozier-zostal-owacyjnie-pozegnany-4542939/alternates/LANDSCAPE_1280" alt="Murem za zwolnionym kapitanem lotniskowca. Ponad 120 tysięcy podpisów pod petycją o jego przywrócenie" /> Petycję wzywającą siły zbrojne USA do przywrócenia na stanowisko kapitana lotniskowca USS Theodore Roosevelt podpisało już ponad 120 tysięcy osób. Bretta Croziera zwolniono z tej funkcji po liście, w którym wezwał przełożonych do zdecydowanych kroków, by powstrzymać epidemię na okręcie.
+]]>
+</description>
+<pubDate>2020-04-05T05:44:03.000Z</pubDate>
+<guid>
+https://tvn24.pl/swiat/murem-za-zwolnionym-kapitanem-lotniskowca-ponad-120-tysiecy-podpisow-pod-petycja-o-jego-przywrocenie-4542940
+</guid>
+</item>
+<item>
+<title>
+<![CDATA[
+Zmarły kolejne zakażone osoby w Irlandii. Mniej niż dzień wcześniej
+]]>
+</title>
+<link>
+https://tvn24.pl/swiat/zmarly-kolejne-zakazone-osoby-w-irlandii-mniej-niz-dzien-wczesniej-4542947?source=rss
+</link>
+<description>
+<![CDATA[
+<img src="https://tvn24.pl/najnowsze/cdn-zdjecie-i9mbad-swiat-walczy-z-koronawirusem-4542944/alternates/LANDSCAPE_1280" alt="Zmarły kolejne zakażone osoby w Irlandii. Mniej niż dzień wcześniej" /> 137 - tyle wynosi obecnie liczba zmarłych zakażonych koronawirusem w Irlandii. O 17 kolejnych ofiar śmiertelnych poinformowało w sobotę wieczorem ministerstwo zdrowia tego kraju.
+]]>
+</description>
+<pubDate>2020-04-05T05:38:28.000Z</pubDate>
+<guid>
+https://tvn24.pl/swiat/zmarly-kolejne-zakazone-osoby-w-irlandii-mniej-niz-dzien-wczesniej-4542947
+</guid>
+</item>
+</channel>
+</rss>
