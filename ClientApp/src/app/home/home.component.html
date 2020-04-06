@@ -1,37 +1,33 @@
-<h1>Wyślij RSS</h1>
+<h1>RSS</h1>
 <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
-  <div class="form-group row">
-    <input 
-      class="form-control" 
-      placeholder="Username" 
-      type="text" 
-      formControlName="username"
-      (input)="onInput()"/>
-  </div>
-  <div class="form-group row">
-    <input 
-      class="form-control" 
-      placeholder="Nazwa RSS" 
-      type="text" 
-      formControlName="name"
-      (input)="onInput()"/>
-  </div>
-  <div class="form-group row">
-    <input 
-      class="form-control" 
-      placeholder="URL" 
-      type="url" 
-      formControlName="url"
-      (input)="onInput()"/>
-  </div>
-  <div class="form-group row">
-    <input 
-      class="form-control" 
-      placeholder="Email address" 
-      type="email" 
-      formControlName="email"
-      (input)="onInput()"/>
-  </div>
-  <button class="btn btn-info" type="submit" [disabled]="!formGroup.valid">Wyślij</button>
+  <table>
+      <tr>
+        <td>
+            <input 
+              placeholder="URL" 
+              type="url" 
+              formControlName="url" 
+              (input)="onInput()" />
+        </td>
+        <td>
+            <input  
+              placeholder="Email address" 
+              type="email" 
+              formControlName="email"
+              (input)="onInput()" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="readonly-panel"></div>
+        </td>
+        <td>
+          <div class="readonly-panel"></div>
+        </td>
+      </tr>
+      <tr>
+        <td><button class="btn btn-success">save</button></td>
+        <td><button class="btn btn-info" type="submit" [disabled]="!formGroup.valid">Wyślij</button></td>
+      </tr>
+  </table>
 </form>
-<div *ngIf="sent" class="alert alert-success text-center">Rss wysłany prawidłowo</div>

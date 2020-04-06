@@ -2,10 +2,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
+using Microsoft.Azure.Cosmos.Fluent;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RSSSender.Services;
+using System.Threading.Tasks;
 
 namespace RSSSender
 {
@@ -28,7 +30,8 @@ namespace RSSSender
                 configuration.RootPath = "ClientApp/dist";
             });
 
-            services.AddTransient<IRssStoreService, RssStoreService>();
+            services.AddSingleton<IRssStoreService>(
+                InitializeCosmosClientInstanceAsync(Configuration.GetSection("CosmosDb")).GetAwaiter().GetResult());
             services.AddTransient<ILoggerService, FileLoggerService>();
             services.AddTransient<IRssBodyService, RssBodyService>();
             services.AddTransient<IRssReaderService, RssReaderService>();
@@ -76,6 +79,23 @@ namespace RSSSender
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });
+        }
+
+        private static async Task<CosmosDBRSSStoreServie> InitializeCosmosClientInstanceAsync(IConfigurationSection configurationSection)
+        {
+            var databaseName = configurationSection.GetSection("DatabaseName").Value;
+            var containerName = configurationSection.GetSection("ContainerName").Value;
+            var account = configurationSection.GetSection("Account").Value;
+            var key = configurationSection.GetSection("Key").Value;
+            var clientBuilder = new CosmosClientBuilder(account, key);
+            var client = clientBuilder
+                                .WithConnectionModeDirect()
+                                .Build();
+            var cosmosDbRssStoreService = new CosmosDBRSSStoreServie(client, databaseName, containerName);
+            var database = await client.CreateDatabaseIfNotExistsAsync(databaseName);
+            await database.Database.CreateContainerIfNotExistsAsync(containerName, "/id");
+
+            return cosmosDbRssStoreService;
         }
     }
 }

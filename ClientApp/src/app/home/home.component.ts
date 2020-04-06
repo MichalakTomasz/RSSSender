@@ -18,25 +18,16 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.formGroup = new FormGroup({
-      username: new FormControl('', Validators.required),
-      name: new FormControl('', Validators.required),
       url: new FormControl('', Validators.required),
       email: new FormControl('', { 
         validators: [Validators.email, Validators.required],
         updateOn: 'blur'})
     });
-
-    let url = document.location.origin + '/api/getrss'
-    this.http.get<String>(url).subscribe(result => {
-      this.rss = result
-    })
   }
 
   onSubmit(){
-    let url = document.location.origin + '/api/sendrssdata'
+    let url = document.location.origin + '/api/saverssdata'
     let rssData = <IRssData> {
-      username: this.formGroup.value.username,
-      name: this.formGroup.value.name,
       url: this.formGroup.value.url,
       email: this.formGroup.value.email
     }

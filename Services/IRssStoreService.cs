@@ -6,7 +6,7 @@ namespace RSSSender.Services
 {
     public interface IRssStoreService
     {
-        Task<IEnumerable<RssData>> LoadRssDataAsync();
-        Task<bool> SaveRssDataAsync(RssData rssData);
+        Task SaveRssDataAsync(RssData rssData);
+        Task<IEnumerable<RssData>> GetItemsAsync(string query);
     }
 }

@@ -26,15 +26,15 @@ namespace RSSSender.Controllers
             this.rssReaderService = rssReaderService;
         }
 
-        [HttpPost("sendrssdata")]
-        public async Task<IActionResult> SendRssData([FromBody] RssData rssData)
+        [HttpPost("savessdata")]
+        public async Task<IActionResult> SaveRssData([FromBody] RssData rssData)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var result = await rssStoreService.SaveRssDataAsync(rssData);
+            await rssStoreService.SaveRssDataAsync(rssData);
 
-            return Ok(result);
+            return Ok();
         }
 
         [HttpGet("sendnotification")]

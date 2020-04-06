@@ -1,10 +1,15 @@
-﻿namespace RSSSender.Models
+﻿using Newtonsoft.Json;
+using System;
+
+namespace RSSSender.Models
 {
     public class RssData
     {
-        public string Username { get; set; }
-        public string Name { get; set; }
+        [JsonProperty(PropertyName = "ID")]
+        public string ID { get; set; }
+        [JsonProperty(PropertyName = "Url")]
         public string Url { get; set; }
+        [JsonProperty(PropertyName = "Email")]
         public string Email { get; set; }
     }
 }
