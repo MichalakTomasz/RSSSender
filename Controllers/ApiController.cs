@@ -6,6 +6,9 @@ using RSSSender.Models;
 using RSSSender.Services;
 using SendGrid;
 using SendGrid.Helpers.Mail;
+using System.Linq;
+using System.Text;
+using RSSSender.ViewModels;
 
 namespace RSSSender.Controllers
 {
@@ -26,8 +29,8 @@ namespace RSSSender.Controllers
             this.rssReaderService = rssReaderService;
         }
 
-        [HttpPost("savessdata")]
-        public async Task<IActionResult> SaveRssData([FromBody] RssData rssData)
+        [HttpPost("saverssdata")]
+        public async Task<IActionResult> SaveRssData([FromBody]RssData rssData)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -37,30 +40,43 @@ namespace RSSSender.Controllers
             return Ok();
         }
 
-        [HttpGet("sendnotification")]
-        public async Task<IActionResult> PostMessage()
+        [HttpPost("sendnotification")]
+        public async Task<IActionResult> PostMessage(string emailAddress)
         {
+            if (string.IsNullOrEmpty(emailAddress))
+                return Ok("Empty list");
+
+            var allRss = await rssStoreService.GetAllItemsAsync();
+            var filtredRss = allRss?.Where(i => i.Email == emailAddress);
+
             var apiKey = configuration.GetSection("SENDGRID_API_KEY").Value;
             var client = new SendGridClient(apiKey);
-            var from = new EmailAddress("vlad3dracula@gmail.com", "Example User 1");
-            var tos = new List<EmailAddress>
+
+            var rssBodyBuilder = new StringBuilder();
+            var rssLinks = new List<string>();
+            filtredRss?.ToList().ForEach(rss =>
             {
-              new EmailAddress("protheus@o2.com", "protheus")
-            };
+                var rssResult = rssReaderService.GetRss(rss.Url);
+                rssBodyBuilder.Append(rssResult);
+                rssLinks.Add(rss.Url);
+            });
 
-            var subject = "Hello world email from Sendgrid ";
-            var htmlContent = "<strong>Hello world with HTML content</strong>"; 
-            var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, tos, subject, "", htmlContent, false);
+
+            var from = new EmailAddress("protheus@tlen.pl");
+            var tos = new List<EmailAddress> { new EmailAddress(emailAddress, string.Empty) };
+            var subject = "Rss message ";
+            var rssBody = rssBodyBuilder.ToString();
+            var htmlContent = $"<strong>{rssBody}</strong>";
+            var msg = MailHelper.CreateSingleEmailToMultipleRecipients(
+                from, tos, subject, "", htmlContent, false);
             await client.SendEmailAsync(msg);
-            
-            return Ok(true);
-        }
 
-        [HttpGet("getrss")]
-        public IActionResult GetRss()
-        {
-            var rss = rssReaderService.GetRss();
-            return Ok(rss);
+            var rssResponse = new RssResponseViewModel
+            {
+                Links = rssLinks,
+                RssBody = rssBody
+            };
+            return Ok(rssResponse);
         }
     }
 }

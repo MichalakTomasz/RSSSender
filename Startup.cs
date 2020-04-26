@@ -30,8 +30,8 @@ namespace RSSSender
                 configuration.RootPath = "ClientApp/dist";
             });
 
-            services.AddSingleton<IRssStoreService>(
-                InitializeCosmosClientInstanceAsync(Configuration.GetSection("CosmosDb")).GetAwaiter().GetResult());
+            //services.AddSingleton<IRssStoreService>(
+            //    InitializeCosmosClientInstanceAsync(Configuration.GetSection("CosmosDb")).GetAwaiter().GetResult());
             services.AddTransient<ILoggerService, FileLoggerService>();
             services.AddTransient<IRssBodyService, RssBodyService>();
             services.AddTransient<IRssReaderService, RssReaderService>();
@@ -93,7 +93,7 @@ namespace RSSSender
                                 .Build();
             var cosmosDbRssStoreService = new CosmosDBRSSStoreServie(client, databaseName, containerName);
             var database = await client.CreateDatabaseIfNotExistsAsync(databaseName);
-            await database.Database.CreateContainerIfNotExistsAsync(containerName, "/id");
+            await database.Database.CreateContainerIfNotExistsAsync(containerName, "/ID");
 
             return cosmosDbRssStoreService;
         }

@@ -2,6 +2,6 @@
 {
     public interface IRssReaderService
     {
-        string GetRss();
+        string GetRss(string url);
     }
 }

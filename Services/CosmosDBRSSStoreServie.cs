@@ -28,6 +28,9 @@ namespace RSSSender.Services
             return result;
         }
 
+        public async Task<IEnumerable<RssData>> GetAllItemsAsync()
+            => await GetItemsAsync("select * from RssTable");
+
         public async Task SaveRssDataAsync(RssData rssData)
         {
             await container.CreateItemAsync<RssData>(

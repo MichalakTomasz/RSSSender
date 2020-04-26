@@ -8,5 +8,6 @@ namespace RSSSender.Services
     {
         Task SaveRssDataAsync(RssData rssData);
         Task<IEnumerable<RssData>> GetItemsAsync(string query);
+        Task<IEnumerable<RssData>> GetAllItemsAsync();
     }
 }
