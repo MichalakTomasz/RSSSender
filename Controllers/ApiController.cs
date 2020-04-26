@@ -64,7 +64,7 @@ namespace RSSSender.Controllers
 
             var from = new EmailAddress("protheus@tlen.pl");
             var tos = new List<EmailAddress> { new EmailAddress(emailAddress, string.Empty) };
-            var subject = "Rss message ";
+            var subject = "Rss message";
             var rssBody = rssBodyBuilder.ToString();
             var htmlContent = $"<strong>{rssBody}</strong>";
             var msg = MailHelper.CreateSingleEmailToMultipleRecipients(

@@ -30,8 +30,8 @@ namespace RSSSender
                 configuration.RootPath = "ClientApp/dist";
             });
 
-            //services.AddSingleton<IRssStoreService>(
-            //    InitializeCosmosClientInstanceAsync(Configuration.GetSection("CosmosDb")).GetAwaiter().GetResult());
+            services.AddSingleton<IRssStoreService>(
+                InitializeCosmosClientInstanceAsync(Configuration.GetSection("CosmosDb")).GetAwaiter().GetResult());
             services.AddTransient<ILoggerService, FileLoggerService>();
             services.AddTransient<IRssBodyService, RssBodyService>();
             services.AddTransient<IRssReaderService, RssReaderService>();
