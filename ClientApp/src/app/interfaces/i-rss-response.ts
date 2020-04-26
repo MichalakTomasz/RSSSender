@@ -1,4 +1,4 @@
 export interface IRssResponse {
-    rssBody: string,
-    rssLinks: Array<string>
+    body: string,
+    links: Array<string>
 }

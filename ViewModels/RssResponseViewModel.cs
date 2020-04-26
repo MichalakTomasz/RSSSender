@@ -4,7 +4,7 @@ namespace RSSSender.ViewModels
 {
     public class RssResponseViewModel
     {
-        public string RssBody { get; set; }
+        public string Body { get; set; }
         public IEnumerable<string> Links { get; set; }
     }
 }

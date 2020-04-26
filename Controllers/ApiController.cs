@@ -74,7 +74,7 @@ namespace RSSSender.Controllers
             var rssResponse = new RssResponseViewModel
             {
                 Links = rssLinks,
-                RssBody = rssBody
+                Body = rssBody
             };
             return Ok(rssResponse);
         }
